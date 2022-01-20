@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Decodificador de texto</title>
+  </head>
+  <body> 
+    <main>
+    <div class="container">
+      <div class="container-left">
+        <h1 id="title">Codifique e Decodifique seus textos</h1>
+        <div class="aviso">
+          <img id="img-exclamacao" src="./assets/exclamacao.png" alt="" />
+          <p>Apenas letras minúsculas e sem acento</p>
+        </div>
+        <div> 
+          <form action="">
+          <textarea class="text-input" type="text" name="input-texto" id="input-text" placeholder=" Digite seu texto aqui"></textarea>
+          <div id="container-buttons">
+            <input onclick="code()" type="button" value="Criptografar" id="btn-code" class="btn"></input>
+            <input onclick="decode()" type="button" value="Descriptografar" id="btn-decode" class="btn"></input>
+          </div>
+        </form>
+        </div>
+        </div>
+        <div id="container-right">
+          <div><textarea id="text-copy" class="text-copy" placeholder=" Atenção: o texto codificado aparecerá aqui"></textarea>
+          </textarea></div>
+          <div><input type="button" value="Copiar" onclick="copy()" class="btn" id="btn-copy"></input></div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <h3>&copy; Desenvolvido por Flávio Martins</h3>
+    <a href="https://www.linkedin.com/in/flavio-luis-martins/7
+    "><img src="./assets/logoLinkedin.png" alt=""></a>
+  </footer>
+
+  <script src="./script.js"></script>
+  </body>
+</html>
