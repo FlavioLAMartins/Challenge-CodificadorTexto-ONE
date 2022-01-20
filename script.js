@@ -42,8 +42,6 @@ function decode() {
 }
 
 function copy() {
-  let copyText = document.getElementById('text-copy')
-  copyText.select()
-  document.execCommand('copy')
+  navigator.clipboard.writeText(document.getElementById('text-copy').value)
   alert('Texto copiado')
 }
