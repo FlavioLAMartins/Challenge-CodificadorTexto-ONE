@@ -1,14 +1,18 @@
+//For creating typing effect, applied to title and output results in encoding and decoding
 function typeWriter(elemento) {
   const textArray = elemento.innerHTML.split('')
   elemento.innerHTML = ''
   textArray.forEach((letra, i) => {
-    setTimeout(() => (elemento.innerHTML += letra), 120 * i)
+    setTimeout(() => (elemento.innerHTML += letra), 50 * i)
   })
-  setTimeout(() => typeWriter(title), 10000)
 }
+
 const title = document.getElementById('title')
 typeWriter(title)
 
+const escreva = document.getElementById('text-copy')
+
+//For creating the encoding
 function code() {
   let txt = document.getElementById('input-text')
   let textforcopy = document.getElementById('text-copy')
@@ -20,8 +24,10 @@ function code() {
     .replace(/o/gi, 'ober')
     .replace(/u/gi, 'ufat')
   textforcopy.innerHTML = res
+  typeWriter(escreva)
 }
 
+//For creating the decoding
 function decode() {
   let txt = document.getElementById('input-text')
   let textforcopy = document.getElementById('text-copy')
@@ -38,6 +44,7 @@ function decode() {
       .replace(/ober/gi, 'o')
       .replace(/ufat/gi, 'u')
     textforcopy.innerHTML = res
+    typeWriter(escreva)
   }
 }
 
