@@ -1,16 +1,27 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
-body {
-  background: linear-gradient(#CCCCCC, #FFFFFF) no-repeat;
-    background-position: center;
-    height: 100%;
 
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
+body {
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  animation: colors 15s ease-in-out infinite;
+  background-position: center;
+  height: 100vh;
+}
+@keyframes colors {
+  0% {
+    background-position: 0% 50% ;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 h1{
-  color: #0a3871;
+  color: #ffffff;
   font-size: 40px;
+  text-shadow: black 0.1em 0.1em 0.2em
 }
 h1::after {
   content:'|';
@@ -39,7 +50,8 @@ p {
   line-height: 18px;
   font-weight: 400;
   font-style: normal;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-shadow: black 0.1em 0.1em 0.2em
 }
 
 .aviso {
@@ -53,7 +65,7 @@ p {
 .container-left textarea {
   width: 800px;
   height: 320px;
-  color: #0a3871;
+  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.100);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(15px);
@@ -61,10 +73,11 @@ p {
   border: 0;
   border-radius: 5px;
   margin-bottom: 35px;
-  
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 15px;  
 }
 ::-webkit-input-placeholder{
-  color: #0a3871b4;
+  color: #ffffff;
   font-weight: bold;
   font-size: 15px;
 
@@ -89,32 +102,33 @@ justify-content: center;
 border: 0;
 font-size: 1.2rem;
 font-weight:bold;
-
+background: linear-gradient(45deg, #23a5d546, #23d5ab6b);
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.7);
+color: #ffffff;
+text-shadow: black 0.1em 0.1em 0.2em
 }
-
-#btn-code {
-  background: linear-gradient(45deg, #0a387177, #0a3871de, #0a3871);
-  
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.3);
-  color: #ffffff;
-}
-#btn-code:hover {
-  background: linear-gradient(45deg, #0a3871, #0a387177, #0a38712a);
+#btn-code:hover{
+  background: linear-gradient(45deg, #23D5AB, #23A6D5);
   cursor: pointer;
 }
-#btn-decode, #btn-copy{
-  background: linear-gradient(45deg, #19191a56, #4144464b, #6e71741e);
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.3);
-  color: #0a3871;
-  }
+#btn-decode:hover{
+  background: linear-gradient(45deg, #23D5AB, #23A6D5);
+  cursor: pointer;
+}
+  #btn-copy:hover {
+  background: linear-gradient(45deg, #23D5AB, #23A6D5);
+  cursor: pointer;
+}
+
 #btn-copy {
   margin-left: 28px;
   margin-bottom: 10px;
 }
+
 #text-copy {
   width: 380px;
   height: 483px;
-  color: #0a3871;
+  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.100);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(15px);
@@ -122,6 +136,8 @@ font-weight:bold;
   border: 0;
   border-radius: 5px;
   margin-bottom: 35px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 15px;  
 }
 .container .container-left .aviso {
   display: flex;
@@ -138,7 +154,7 @@ font-weight:bold;
 
 footer {
   margin-top: 100px;
-  color:#0a3871;
+  color:#8c9094b4;
   text-align: center;
   font-size: 20px;
   font-style: italic;
