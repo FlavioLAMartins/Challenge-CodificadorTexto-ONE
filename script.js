@@ -8,7 +8,6 @@ function typeWriter(elemento) {
 }
 
 const title = document.getElementById('title')
-typeWriter(title)
 
 const escreva = document.getElementById('text-copy')
 
@@ -20,6 +19,7 @@ function animate() {
   if (c == 50) {
     loader.parentElement.removeChild(loader)
     document.querySelector('main').style.visibility = 'visible'
+    typeWriter(title)
     clearInterval(load)
   } else {
     c++
