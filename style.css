@@ -76,6 +76,7 @@ p {
   margin-bottom: 35px;
   text-shadow: black 0.1em 0.1em 0.2em;
   font-size: 15px;  
+  resize: none;
 }
 ::-webkit-input-placeholder{
   color: #ffffff;
@@ -139,6 +140,7 @@ text-shadow: black 0.1em 0.1em 0.2em
   margin-bottom: 35px;
   text-shadow: black 0.1em 0.1em 0.2em;
   font-size: 15px;  
+  resize: none;
 }
 .container .container-left .aviso {
   display: flex;
