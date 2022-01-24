@@ -302,11 +302,10 @@ footer{
 
   #loader{
     top: 30%;
-    left: 40%;
+    left: 43%;
   }
 .container {
   justify-content: space-around;
-  margin-top: px;
   flex-direction: column;
   text-align: center;
   align-items: center;
