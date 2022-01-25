@@ -7,9 +7,9 @@ function typeWriter(elemento) {
   })
 }
 const title = document.getElementById('title')
-
 const escreva = document.getElementById('text-copy')
 
+//for pre loader
 let loader = document.querySelector('.page-loading')
 let pageDecode = document.querySelector('main')
 let load = setInterval(animate, 50)
@@ -38,6 +38,7 @@ function code() {
     .replace(/u/gi, 'ufat')
   textforcopy.innerHTML = res
   typeWriter(escreva)
+  txt.value = ''
 }
 
 //For creating the decoding
@@ -45,7 +46,7 @@ function decode() {
   let txt = document.getElementById('input-text')
   let textforcopy = document.getElementById('text-copy')
   let text = txt.value
-  let haveWord = ['enter', 'ai', 'ober', 'ufat']
+  let haveWord = ['enter', 'ai', 'ober', 'ufat', 'imes']
   let verif = haveWord.some(e => text.includes(e))
   if (!verif) {
     alert('Texto inválido, tente novamente')
@@ -58,6 +59,7 @@ function decode() {
       .replace(/ufat/gi, 'u')
     textforcopy.innerHTML = res
     typeWriter(escreva)
+    txt.value = ''
   }
 }
 
