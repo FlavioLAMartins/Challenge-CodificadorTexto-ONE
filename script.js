@@ -6,7 +6,6 @@ function typeWriter(elemento) {
     setTimeout(() => (elemento.innerHTML += letra), 50 * i)
   })
 }
-
 const title = document.getElementById('title')
 
 const escreva = document.getElementById('text-copy')

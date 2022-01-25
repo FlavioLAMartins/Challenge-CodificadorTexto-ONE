@@ -1,15 +1,28 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 
 body {
-  background: linear-gradient(-45deg, #575351, #E73C7E, #23A6D5, #23D5AB);
+  background: linear-gradient(-45deg, #000, #0A3871, #0a3871a9, #F3F5FC);
   background-size: 400% 400%;
   animation: colors 15s ease-in-out infinite;
   background-position: center;
   height: 100vh;
 }
+
+body::-webkit-scrollbar {
+  width: 12px;            
+}
+body::-webkit-scrollbar-track {
+  background: linear-gradient(-45deg, #515557, #0A3871, #0a3871a9, #181a19);
+}
+body::-webkit-scrollbar-thumb {
+  background-color:linear-gradient(45deg, #23a5d546, #23d5ab6b);
+  border-radius: 24px;
+  border: solid 1px #ffffff36;
+}
+
 main {
   visibility: hidden;
-}
+} 
 @keyframes colors {
   0% {
     background-position: 0% 50% ;
@@ -42,6 +55,7 @@ main {
   border-top-color: #553541;
   top: 50%;
   left: 50%;
+  z-index: 3;
 }
 
 
@@ -139,7 +153,7 @@ font-weight:bold;
 background: linear-gradient(45deg, #23a5d546, #23d5ab6b);
 box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.7);
 color: #ffffff;
-text-shadow: black 0.1em 0.1em 0.2em
+text-shadow: black 0.1em 0.1em 0.2em;
 }
 #btn-code:hover{
   background: linear-gradient(45deg, #23D5AB, #23A6D5);
@@ -174,6 +188,7 @@ text-shadow: black 0.1em 0.1em 0.2em
   font-size: 15px;  
   resize: none;
 }
+
 .container .container-left .aviso {
   display: flex;
   justify-content: flex-start;
