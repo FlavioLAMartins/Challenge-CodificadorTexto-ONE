@@ -1,0 +1,38 @@
+#loader{
+  position: relative;
+  animation: is-rotating .5s infinite linear;
+  width: 50px;
+  height: 50px;
+  border: 6px solid #e5e5e5;
+  border-radius: 50%;
+  border-top-color: #553541;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+h1{
+  color: #ffffff;
+  font-size: 40px;
+  text-shadow: black 0.1em 0.1em 0.2em
+}
+h1::after {
+  content:'|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
