@@ -1,8 +1,8 @@
 function code() {
-  let txt = document.getElementById('input-text')
-  let textforcopy = document.getElementById('text-copy')
-  let text = txt.value
-  let res = text
+  const txt = document.getElementById('input-text')
+  const textforcopy = document.getElementById('text-copy')
+  const text = txt.value
+  const res = text
     .replace(/e/gi, 'enter')
     .replace(/i/gi, 'imes')
     .replace(/a/gi, 'ai')

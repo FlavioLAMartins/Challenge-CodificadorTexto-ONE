@@ -1,6 +1,6 @@
-let loader = document.querySelector('.page-loading')
-let pageDecode = document.querySelector('main')
-let load = setInterval(animate, 50)
+const loader = document.querySelector('.page-loading')
+const pageDecode = document.querySelector('main')
+const load = setInterval(animate, 50)
 let c = 0
 function animate() {
   if (c == 50) {

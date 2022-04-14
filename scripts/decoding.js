@@ -1,9 +1,9 @@
 function decode() {
-  let txt = document.getElementById('input-text')
-  let textforcopy = document.getElementById('text-copy')
-  let text = txt.value
-  let haveWord = ['enter', 'ai', 'ober', 'ufat', 'imes']
-  let verif = haveWord.some(e => text.includes(e))
+  const txt = document.getElementById('input-text')
+  const textforcopy = document.getElementById('text-copy')
+  const text = txt.value
+  const haveWord = ['enter', 'ai', 'ober', 'ufat', 'imes']
+  const verif = haveWord.some(e => text.includes(e))
   if (!verif) {
     alert('Texto inválido, tente novamente')
   } else {
